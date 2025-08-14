@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motiv Design - 填寫表單</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 為了讓表單頁面有更好的閱讀體驗，這裡覆蓋一些樣式 */
+        body {
+            background-color: #f8f8f8;
+            color: #121212;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-form-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 100px; /* 留出導覽列空間 */
+            min-height: 100vh;
+        }
+
+        .main-form-page h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #121212;
+        }
+
+        .main-form-page p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 3rem;
+        }
+
+        /* 讓表單在單獨頁面中更寬一些 */
+        #contact-form {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>莫提設計</h1>
+            <p>Motiv Design</p>
+        </div>
+        <nav class="navbar">
+            <a href="index.html#about" class="nav-link">公司介紹</a>
+            <a href="index.html#services" class="nav-link">核心技能與收費</a>
+            <a href="index.html#design" class="nav-link">使用設計</a>
+            <a href="index.html#portfolio" class="nav-link">客戶案例</a>
+            <a href="index.html#contact" class="nav-link">聯絡方式</a>
+        </nav>
+    </header>
+
+    <main class="main-form-page">
+        <h2 data-lang="form-title">專案需求表單</h2>
+        <p data-lang="form-description">請填寫以下表單，我們的專案經理將會盡快與您聯繫。</p>
+        <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name" data-lang="form-name-label">姓名 *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" data-lang="form-email-label">E-mail *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone" data-lang="form-phone-label">電話 *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="company" data-lang="form-company-label">公司名稱</label>
+                <input type="text" id="company" name="company">
+            </div>
+            <div class="form-group">
+                <label for="industry" data-lang="form-industry-label">產業</label>
+                <input type="text" id="industry" name="industry">
+            </div>
+            <div class="form-group">
+                <label for="service" data-lang="form-service-label">需求項目</label>
+                <input type="text" id="service" name="service">
+            </div>
+            <div class="form-group">
+                <label for="budget" data-lang="form-budget-label">期望預算</label>
+                <input type="text" id="budget" name="budget">
+            </div>
+            <div class="form-group">
+                <label for="message" data-lang="form-message-label">需求說明</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="submit-btn" data-lang="form-submit-btn">送出</button>
+        </form>
+    </main>
+<footer>
+        <div class="footer-content">
+                <a href="#" id="back-to-top" class="back-to-top" data-lang="back-to-top-text">
+                回到最上端 <i class="fas fa-arrow-up"></i>
+            </a>
+            <p class="copyright" data-lang="copyright-text">
+                2025 © Motiv Design, All rights reserved, Built in-house.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="form-script.js"></script>
+</body>
+</html>
