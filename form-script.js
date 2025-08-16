@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const translations = {
         zh: {
-            // 導覽列
+            // 導覽列 test
             'about': '公司介紹',
             'services': '核心技能與收費',
             'design': '使用設計',
